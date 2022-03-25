@@ -17,6 +17,7 @@ import {
   Label,
 } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
+import { FadeTransform, Fade, Stagger } from 'react-animation-components'
 
 class Header extends Component {
   constructor(props) {
@@ -58,10 +59,17 @@ class Header extends Component {
         <Jumbotron fluid>
           <div className="container">
             <div className="row">
-              <div className="col">
-                <h1>NuCamp</h1>
-                <h2>A better way to camp</h2>
-              </div>
+              <FadeTransform
+                in
+                transformProps={{
+                  exitTransform: 'scale(0.5)',
+                }}
+              >
+                <div className="col">
+                  <h1>NuCamp</h1>
+                  <h2>A better way to camp</h2>
+                </div>
+              </FadeTransform>
             </div>
           </div>
         </Jumbotron>
