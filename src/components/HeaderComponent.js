@@ -17,7 +17,7 @@ import {
   Label,
 } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
-import { FadeTransform, Fade, Stagger } from 'react-animation-components'
+import { FadeTransform } from 'react-animation-components'
 
 class Header extends Component {
   constructor(props) {
